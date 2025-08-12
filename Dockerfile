@@ -2,6 +2,8 @@ FROM ghcr.io/pterodactyl/yolks:java_21
 
 USER root
 
+RUN chmod +x /entrypoint.sh
+
 RUN printf '%s\n' \
   '#!/bin/bash' \
   'set -e' \
